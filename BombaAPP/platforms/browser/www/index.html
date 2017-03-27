@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Righteous" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="bg">
+            <div class="bg-title">
+                <p>GAME BOOM </p>
+            </div>
+        </div>
+    </header>
+    <article>
+        <!--<button onclick="cut2()">aki</button>-->
+        <section class="gamer">
+            <div class="gamer-box">
+                <h2>juega y diviertete con GAME-BOOM</h2>
+                <p class="gamer-box-text">
+                    Para jugar introduce tu nombre:<br>
+                    <input id="gamerName" type="text" name="gamer" value="" placeholder="tu nombre"><br>
+                    <button id="btnPlay" type="" onclick="gamePlay()">INICIAR JUEGO</button>
+                </p>
+            </div>
+        </section>
+        <section class=" game" id="game">
+            <div class="game-box">
+                <div class="game-box-gamer">
+                    <h3>GAMER</h3>
+                    <!--<span id="gamer"></span>-->
+                    <P id="gamer">
+                    </P>
+                </div>
+                <div class="game-box-rate">
+                    <h2>Mejor puntuacion</h2>
+                    <p id="rate"></p>
+                </div>
+            </div>
+        </section>
+        <section class=" game-picture is-play">
+            <div id="play" class="play">play</div>
+            <div id="loser">
+                <div class="loser">lose</div><br>
+                <div class="boom">boom</div>
+            </div>
+            <div class="picture " id="picture">
+                <div class="picture-tempo" id="clock">
+                    <h2>time</h2>
+                    <div class="time">
+                        <span id="min-tem">00</span> :
+                        <span id="sec-tem">00</span>
+                    </div>
+                </div>
+                <div class="picture-detonador" id="detonador"></div>
+                <div class="picture-cables" id="cable">
+                    <div class="picture-cables-cable  " id="c1">
+                        <div class="picture-cables-cable-cab" id="cab1"></div>
+                    </div>
+                    <div class="picture-cables-cable  " id="c2">
+                        <div class="picture-cables-cable-cab" id="cab2"></div>
+                    </div>
+                    <div class="picture-cables-cable  " id="c3">
+                        <div class="picture-cables-cable-cab" id="cab3"></div>
+                    </div>
+                </div>
+                <div class="picture-boom" id="boom"></div>
+            </div>
+        </section>
+        <section class="game-message">
+            <div class="msn">
+                <p id="msn">no te pongas nervioso</p>
+                <button class="" onclick="resetPlay()" id="reset"><b>REINICIAR</b> </button>
+            </div>
+            <div class="media">
+                <audio class="is-hidden">
+                    <source id="media" src="./media/boom-boom.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </section>
+    </article>
+    <footer class="footer">
+        <div class="copy">by Duard Design 2017 </div>
+    </footer>
+    <script src="./javascript/javascript.js"></script>
+
+</body>
+
+</html>

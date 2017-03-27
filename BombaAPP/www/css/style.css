@@ -1,0 +1,545 @@
+/*
+*elementos
+*/
+*,
+header,
+article,
+footer {
+  font-size: 1em;
+  margin: 0;
+  padding: 0; }
+
+header,
+article,
+footer {
+  width: 100%; }
+
+article {
+  min-height: 720px;
+  background-color: #872D62;
+  padding-bottom: 50px; }
+  @media only screen and (max-width: 768px) {
+    article {
+      min-height: 0;
+      height: 100%;
+      padding-bottom: 20px; } }
+
+/*
+* variables
+*/
+.is-play {
+  z-index: 100000;
+  width: 700px;
+  border: 3px solid #fff;
+  background-color: #872D62; }
+  @media only screen and (max-width: 768px) {
+    .is-play {
+      border: 1px solid #fff;
+      text-shadow: 0 1px 5px #000;
+      width: 300px; } }
+
+.is-bg {
+  background-image: url(./../images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1000; }
+
+/*.is-visible {
+    visibility: visible;
+}*/
+.is-visible {
+  visibility: hidden; }
+
+.is-hidden {
+  display: none; }
+
+.is-white {
+  background-color: #fff; }
+
+.custom-cursor {
+  cursor: url("//cybmeta.com/wp-content/uploads/2015/06/hal-angry-birds-cursor.png"), pointer; }
+
+.custom {
+  cursor: url("http://www.fancyicons.com/free-icons/112/must-have/png/32/cut_32.png"), pointer; }
+
+.play {
+  font-family: "Orbitron", sans-serif;
+  line-height: 250px;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 12em;
+  color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  text-shadow: 0 1px 5px #000;
+  -webkit-animation: show-play 5s ease;
+  animation: show-play 5s ease; }
+  @media only screen and (max-width: 768px) {
+    .play {
+      line-height: 150px;
+      font-size: 7.5em; } }
+
+.loser {
+  font-family: "Orbitron", sans-serif;
+  line-height: 150px;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 6.75em;
+  color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  text-shadow: 0 1px 5px #000;
+  -webkit-animation: show-loser 2s ease;
+  animation: show-loser 2s ease; }
+  @media only screen and (max-width: 768px) {
+    .loser {
+      line-height: 100px;
+      font-size: 3em; } }
+
+.boom {
+  text-transform: uppercase;
+  right: 0;
+  font-family: "Orbitron", sans-serif;
+  line-height: 350px;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 7.5em;
+  color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  text-shadow: 0 1px 5px #000;
+  -webkit-animation: show-boom 2s ease;
+  animation: show-boom 2s ease; }
+  @media only screen and (max-width: 768px) {
+    .boom {
+      line-height: 180px;
+      font-size: 5.25em; } }
+
+.sombras, .gamer-box-text, .game-box, .game-picture, .game-message {
+  box-shadow: 1px 2px 6px #000; }
+
+/*
+*style
+*/
+.bg {
+  /* background-image: url(./../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .bg-title {
+    color: #CB87AF;
+    font-size: 6em;
+    font-family: "Righteous", cursive;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px #250339; }
+    @media only screen and (max-width: 768px) {
+      .bg-title {
+        margin: 0 auto;
+        font-size: 3em;
+        line-height: 80px; } }
+
+.gamer {
+  margin-bottom: 20px;
+  font-family: "Orbitron", sans-serif;
+  text-transform: capitalize;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff; }
+  .gamer-box h2 {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 100px; }
+    @media only screen and (max-width: 768px) {
+      .gamer-box h2 {
+        margin: 0 auto;
+        font-size: 0.96em;
+        line-height: 50px; } }
+  .gamer-box-text {
+    line-height: 30px;
+    font-size: 1.2em;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: 3px solid #fff;
+    text-align: center;
+    max-width: 700px; }
+    .gamer-box-text input {
+      text-align: center; }
+      @media only screen and (max-width: 768px) {
+        .gamer-box-text input {
+          font-size: 2.1em;
+          line-height: 1;
+          max-width: 120px; } }
+    .gamer-box-text button {
+      color: #fff;
+      background-color: #872D62; }
+      @media only screen and (max-width: 768px) {
+        .gamer-box-text button {
+          border: none; } }
+    @media only screen and (max-width: 768px) {
+      .gamer-box-text {
+        margin: 0 auto;
+        padding: 2px 0;
+        font-size: 0.72em;
+        line-height: 1;
+        max-width: 300px;
+        border: 1px solid #fff; } }
+
+.game {
+  height: 82px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+  margin-bottom: 30px; }
+  .game-box {
+    margin: 0 auto;
+    max-width: 700px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: 3px solid #fff; }
+    @media only screen and (max-width: 768px) {
+      .game-box {
+        margin: 0 auto;
+        font-size: 0.72em;
+        line-height: 30px;
+        max-width: 300px;
+        border: 1px solid #fff; } }
+    .game-box-rate {
+      width: 50%; }
+      .game-box-rate h2 {
+        line-height: 2;
+        text-align: center; }
+      .game-box-rate p {
+        text-align: center;
+        font-size: 3em; }
+    .game-box-gamer {
+      text-align: center;
+      width: 50%; }
+      .game-box-gamer h3 {
+        line-height: 2;
+        font-size: 1.2em; }
+      .game-box-gamer p {
+        font-size: 2.55em;
+        text-transform: capitalize; }
+      .game-box-gamer span {
+        font-size: 1.5em; }
+  @media only screen and (max-width: 768px) {
+    .game {
+      margin-bottom: 0px; } }
+
+.game-picture {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media only screen and (max-width: 768px) {
+    .game-picture {
+      margin: 0 auto;
+      font-size: 0.8em;
+      line-height: 20px;
+      max-width: 300px;
+      max-height: 200px; } }
+  .game-picture .picture {
+    margin-top: 0 auto;
+    height: 300px;
+    max-height: 300px;
+    width: 100%;
+    max-width: 800px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    @media only screen and (max-width: 768px) {
+      .game-picture .picture {
+        margin: 0 auto;
+        font-size: 0.8em;
+        line-height: 20px;
+        max-width: 300px;
+        display: block;
+        height: 100%;
+        z-index: 0; } }
+    .game-picture .picture-tempo {
+      font-family: "Orbitron", sans-serif;
+      margin: 0 auto;
+      width: 20%;
+      line-height: 100px; }
+      @media only screen and (max-width: 768px) {
+        .game-picture .picture-tempo {
+          margin: 0 auto;
+          margin-top: -15px;
+          font-size: 0.8em;
+          line-height: 20px;
+          max-width: 300px;
+          display: block;
+          height: 100%; } }
+      .game-picture .picture-tempo h2 {
+        margin-top: 30px;
+        font-size: 2.4em;
+        text-transform: uppercase;
+        text-align: center; }
+      .game-picture .picture-tempo .time {
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .game-picture .picture-tempo .time span {
+          font-size: 2.85em; }
+    .game-picture .picture-detonador {
+      margin-top: 40px;
+      width: 20%;
+      z-index: 1000;
+      margin-right: -20px;
+      background-image: url(./../images/detonator.png);
+      background-size: contain;
+      background-repeat: no-repeat; }
+      @media only screen and (max-width: 768px) {
+        .game-picture .picture-detonador {
+          margin-top: 20px;
+          margin-left: 5px;
+          position: relative;
+          width: 80px;
+          height: 90px;
+          background-image: url(./../images/detonator.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          display: -webkit-inline-flex;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          z-index: 1000; } }
+    .game-picture .picture-boom {
+      margin-top: 50px;
+      width: 20%;
+      background-image: url(./../images/bomba2.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 50;
+      -webkit-animation: zoom 1.5s infinite alternate;
+      animation: zoom 1.5s infinite alternate; }
+      @media only screen and (max-width: 768px) {
+        .game-picture .picture-boom {
+          width: 80px;
+          height: 90px;
+          background-image: url(./../images/bomba2.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          display: -webkit-inline-flex;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          z-index: 1000;
+          margin-top: 0px;
+          margin-left: 150px; } }
+    .game-picture .picture-cables {
+      z-index: 0;
+      margin-top: 100px;
+      margin-right: -50px;
+      width: 40%;
+      height: 100px;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .game-picture .picture-cables:hover {
+        cursor: url("http://www.fancyicons.com/free-icons/112/must-have/png/48/cut_48.png") 10 10, pointer; }
+      .game-picture .picture-cables-cable {
+        width: 94%;
+        height: 30px;
+        background-color: #fff; }
+        .game-picture .picture-cables-cable-cab {
+          margin-top: 7px;
+          height: 5px;
+          box-shadow: 0px 0px 2px 1px #000; }
+          @media only screen and (max-width: 768px) {
+            .game-picture .picture-cables-cable-cab {
+              height: 5px;
+              margin-top: 0px;
+              z-index: -1000; } }
+        .game-picture .picture-cables-cable:nth-child(2) {
+          width: 88%; }
+          @media only screen and (max-width: 768px) {
+            .game-picture .picture-cables-cable:nth-child(2) {
+              width: 160px; } }
+        @media only screen and (max-width: 768px) {
+          .game-picture .picture-cables-cable {
+            height: 5px;
+            margin-top: 0px;
+            width: 160px;
+            z-index: -1000; } }
+      @media only screen and (max-width: 768px) {
+        .game-picture .picture-cables {
+          position: absolute;
+          margin-top: 50px;
+          max-width: 160px;
+          height: 40px;
+          display: -webkit-inline-flex;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          z-index: 1000; } }
+
+.game-message {
+  font-family: "Orbitron", sans-serif;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px 0;
+  max-width: 700px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-size: 1.5em;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 3px solid #fff; }
+  @media only screen and (max-width: 768px) {
+    .game-message {
+      margin: 0 auto;
+      margin-top: 20px;
+      font-size: 0.8em;
+      line-height: 20px;
+      max-width: 300px;
+      height: 100%;
+      border: 1px solid #fff; } }
+  .game-message .msn {
+    line-height: 30px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .game-message button {
+    font-family: "Orbitron", sans-serif;
+    padding: 5px;
+    background-color: #fff;
+    color: #872D62;
+    border-radius: 10px; }
+
+.footer {
+  height: 120px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 2px 1px black; }
+  .footer .copy {
+    font-size: 1.5em;
+    font-family: "Righteous", cursive; }
+  @media only screen and (max-width: 768px) {
+    .footer {
+      height: 100%;
+      box-shadow: 0 0 0 #fff; } }
+
+@-webkit-keyframes zoom {
+  from {
+    background-size: 110%; }
+  to {
+    background-size: 95%; } }
+
+@keyframes zoom {
+  from {
+    background-size: 110%; }
+  to {
+    background-size: 95%; } }
+
+@-webkit-keyframes warning {
+  from {
+    box-shadow: inset 0px 0px 2px 1px #872D62; }
+  to {
+    box-shadow: inset 0px 0px 95px 5px red; } }
+
+@keyframes warning {
+  from {
+    box-shadow: inset 0px 0px 2px 1px #872D62; }
+  to {
+    box-shadow: inset 0px 0px 95px 5px red; } }
+
+@-webkit-keyframes show-boom {
+  from {
+    margin-right: -100%; }
+  to {
+    margin-right: 0; } }
+
+@keyframes show-boom {
+  from {
+    margin-right: -100%; }
+  to {
+    margin-right: 0; } }
+
+@-webkit-keyframes show-loser {
+  from {
+    margin-left: -100%; }
+  to {
+    margin-left: 0; } }
+
+@keyframes show-loser {
+  from {
+    margin-left: -100%; }
+  to {
+    margin-left: 0; } }
+
+@-webkit-keyframes show-play {
+  from {
+    margin-top: -100%; }
+  to { } }
+
+@keyframes show-play {
+  from {
+    margin-top: -100%; }
+  to { } }
